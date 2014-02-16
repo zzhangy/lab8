@@ -25,7 +25,6 @@
 		<div class="jumbotron">
 			<h1>Michael Bernstein</h1>
 			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
-			<button id="colorBtn" class="btn btn-primary btn-lg">Colors!</button>
 		</div>
 
 		<h4>Projects</h4>
@@ -35,7 +34,7 @@
 		{{#each projects}}
 		<div class="project" id="{{id}}">
 			<div class="thumbnail">
-				<a href="#">
+				<a href="/project/{{id}}">
 					<img src="{{image}}" alt="Lorem Pixel image" class="img-responsive">
 					<p>{{title}}</p>
 				</a>
