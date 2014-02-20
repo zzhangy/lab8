@@ -18,8 +18,6 @@ function getProjectData(projectID) {
 	} else {
 		projectID = parseInt(projectID);
 	}
-	console.log(projectID);
   	var project = projects[projectID-1]; // of by one, our first project has index 0
-  	console.log(project);
   	return project;	
 }
