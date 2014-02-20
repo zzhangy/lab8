@@ -28,110 +28,17 @@
 		</div>
 
 		<h4>Projects</h4>
-		{{#if grid}}
-			<div class="project" id="{{projects.0.id}}">
+		{{#each projects}}
+			<div class="project" id="{{id}}">
 				<div class="thumbnail">
-					<a href="/project/{{projects.0.id}}">
-						<img src="{{projects.0.image}}" alt="Lorem Pixel image" class="img-responsive">
-						<p>{{projects.0.title}}</p>
+					<a href="/project/{{id}}">
+						<img src="images/{{image}}" alt="Lorem Pixel image" class="img-responsive">
+						<p>{{title}}</p>
 					</a>
 					<div class="details"></div>
 				</div>
 			</div>
-
-			<div class="project" id="{{projects.1.id}}">
-				<div class="thumbnail">
-					<a href="/project/{{projects.1.id}}">
-						<img src="{{projects.1.image}}" alt="Lorem Pixel image" class="img-responsive">
-						<p>{{projects.1.title}}</p>
-					</a>
-					<div class="details"></div>
-				</div>
-			</div>
-
-
-			<div class="project" id="{{projects.2.id}}">
-				<div class="thumbnail">
-					<a href="/project/{{projects.2.id}}">
-						<img src="{{projects.2.image}}" alt="Lorem Pixel image" class="img-responsive">
-						<p>{{projects.2.title}}</p>
-					</a>
-					<div class="details"></div>
-				</div>
-			</div>
-
-
-			<div class="project" id="{{projects.3.id}}">
-				<div class="thumbnail">
-					<a href="/project/{{projects.3.id}}">
-						<img src="{{projects.3.image}}" alt="Lorem Pixel image" class="img-responsive">
-						<p>{{projects.3.title}}</p>
-					</a>
-					<div class="details"></div>
-				</div>
-			</div>
-
-
-			<div class="project" id="{{projects.4.id}}">
-				<div class="thumbnail">
-					<a href="/project/{{projects.4.id}}">
-						<img src="{{projects.4.image}}" alt="Lorem Pixel image" class="img-responsive">
-						<p>{{projects.4.title}}</p>
-					</a>
-					<div class="details"></div>
-				</div>
-			</div>
-
-
-			<div class="project" id="{{projects.5.id}}">
-				<div class="thumbnail">
-					<a href="/project/{{projects.5.id}}">
-						<img src="{{projects.5.image}}" alt="Lorem Pixel image" class="img-responsive">
-						<p>{{projects.5.title}}</p>
-					</a>
-					<div class="details"></div>
-				</div>
-			</div>
-
-
-			<div class="project" id="{{projects.6.id}}">
-				<div class="thumbnail">
-					<a href="/project/{{projects.6.id}}">
-						<img src="{{projects.6.image}}" alt="Lorem Pixel image" class="img-responsive">
-						<p>{{projects.6.title}}</p>
-					</a>
-					<div class="details"></div>
-				</div>
-			</div>
-
-
-			<div class="project" id="{{projects.7.id}}">
-				<div class="thumbnail">
-					<a href="/project/{{projects.7.id}}">
-						<img src="{{projects.7.image}}" alt="Lorem Pixel image" class="img-responsive">
-						<p>{{projects.7.title}}</p>
-					</a>
-					<div class="details"></div>
-				</div>
-			</div>
-
-			<div class="project" id="{{projects.8.id}}">
-				<div class="thumbnail">
-					<a href="/project/{{projects.8.id}}">
-						<img src="{{projects.8.image}}" alt="Lorem Pixel image" class="img-responsive">
-						<p>{{projects.8.title}}</p>
-					</a>
-					<div class="details"></div>
-				</div>
-			</div>
-
-		{{else}}
-			{{#each projects}}
-				<div class="project" id="{{id}}">
-					{{> project}}
-				</div>
-			{{/each}}
-		{{/if}}
+		{{/each}}
 
 
 	<script src="https://code.jquery.com/jquery.js"></script>
