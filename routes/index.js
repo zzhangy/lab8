@@ -5,9 +5,11 @@ var projects = require('../projects.json');
  */
 
 exports.view = function(req, res){
-	var grid = true; // flip between true and false to test grid layout
-
-	// your code goes here
-
+	projects['grid'] = false;
   	res.render('index', projects);
 };
+
+exports.viewGrid = function(req, res) {
+	projects['grid'] = true;
+  	res.render('index', projects);
+}
