@@ -1,4 +1,4 @@
 lab8
 ====
 
-Lab 8: grids, responsive design and analytics
+Lab 8: analytics
